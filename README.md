@@ -57,3 +57,54 @@ mv *1*.txt Music/ :pārceļ uz music
 mv fails102.txt fails103.txt :nomaina nosaukumu  
 man rm :parāda atslēgas  
 history > history.... :saglabā vēsturi  
+  
+# **3. nodarbība**  
+  
+python +enter  
+  
+vars() :vārdnīca  
+print(__builtins__.__doc__)  
+a = 10  
+vars() :jauns mainīgais  
+a = 20  
+vars() :mainās mainīgais  
+a +enter :pieprasa vērtību  
+b +enter :nav definēts  
+b = 1.56  
+vars() :parāda abas vērtības  
+c = 'A'  
+vars()  
+print(a.__doc__) :parāda datu tipus  
+a- integer  
+b- float  
+c- str  
+a*a :parāda rezultātu*  
+c*c :nevar reizināt*  
+exit() :iziet no python  
+  
+ipython +enter : cita valoda  
+  
+idle & +enter  
+  
+options : var nomainīt burtu izmēru
+-"-  
+a =  
+b =  
+c =  
+type(a) +enter :nosaka datu tipu
+file -> save as :ievada nosaukumu (augšā nomainās)  
+ls -l
+cat ...(nosaukums)  
+git clone https://github.com/madaragaile/RTR105 +enter  
+ls -l  
+mv ... RTR105/  
+ls -l
+cd RTR105/  
+ls -l  
+nano test_1.py  
+#!/usr/bin/python  
+a =  
+b =  
+c =  
+ctrl +k nokopē  
+ctrl +k iekopē  
