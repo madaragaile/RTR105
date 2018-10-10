@@ -108,3 +108,4 @@ b =
 c =  
 ctrl +k nokopē  
 ctrl +k iekopē  
+

@@ -1,0 +1,20 @@
+    1  ls -l
+    2  git clone https://github.com/login/RTR105
+    3  cd RTR105
+    4  sudo apt-get install git
+    5  git clone https://github.com/login/RTR105
+    6  git clone https://github.com/madaragaile/RTR105
+    7  ls -l
+    8  idle
+    9  sudo apt-get install idle
+   10  idle
+   11  sudo apt-get install ipython
+   12  ipython
+   13  90
+   14  ls -l
+   15  cd RTR105
+   16  idle &
+   17  README.md
+   18  ls -l
+   19  nano README.md
+   20  history > history_20181010.txt
