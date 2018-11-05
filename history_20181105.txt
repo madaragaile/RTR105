@@ -1,0 +1,15 @@
+    1  ipyhon
+    2  ipython
+    3  idle&
+    4  git clone https://github.com/login/RTR105
+    5  git clone https://github.com/madaragaile/RTR105
+    6  cd RTR105
+    7  history > history_20181022.txt
+    8  ./git-upload 20181022_17_00
+    9  firefox&
+   10  idle &
+   11  rm -rf RTR105
+   12  git clone https://github.com/madaragaile/RTR105
+   13  cd RTR105
+   14  python
+   15  history > history_20181105.txt
