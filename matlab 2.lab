@@ -1,0 +1,131 @@
+>> syms x
+>> f = x + a * sqrt(x^2) - c
+ 
+f =
+ 
+x - c + a*(x^2)^(1/2)
+ 
+>> syms a
+>> f = x + a * sqrt(x^2) - c
+ 
+f =
+ 
+x - c + a*(x^2)^(1/2)
+ 
+>> syms c
+>> f = x + a * sqrt(x^2) - c
+ 
+f =
+ 
+x - c + a*(x^2)^(1/2)
+ 
+>> solve(x + a * sqrt(x^2) - c, a)
+ 
+ans =
+ 
+(c - x)/(x^2)^(1/2)
+ 
+>> latex (f)
+
+ans =
+
+    'x-c+a\,\sqrt{x^2}'
+
+>> syms x;
+>> f(x) = sin(2x) / cos(x) + 2'
+ f(x) = sin(2x) / cos(x) + 2'
+             ↑
+Error: Invalid expression. Check for missing multiplication operator, missing or
+unbalanced delimiters, or other syntax error. To construct matrices, use
+brackets instead of parentheses.
+ 
+>> clear x
+>> x = -pi:0.1:pi;
+>> syms x
+>> f = sin(2*x) / cos(x) + 2'
+ 
+f =
+ 
+sin(2*x)/cos(x) + 2
+ 
+>> int(f)
+ 
+ans =
+ 
+2*x - 2*cos(x)
+ 
+>> plot(x, y)
+Undefined function or variable 'y'.
+ 
+>> syms y
+>> f = sin(2*x) / cos(x) + 2'
+ 
+f =
+ 
+sin(2*x)/cos(x) + 2
+ 
+>> plot(x, y)
+Error using plot
+Data must be numeric, datetime, duration or an array convertible to double.
+ 
+>> clear y
+>> y = eval(vectorize(f))
+ 
+y =
+ 
+sin(2*x)/cos(x) + 2
+ 
+>> plot(x, y)
+Error using plot
+Data must be numeric, datetime, duration or an array convertible to double.
+ 
+>> clear x
+>> syms x
+>> f = sin(2*x) / cos(x) + 2'
+ 
+f =
+ 
+sin(2*x)/cos(x) + 2
+ 
+>> plot(x, y)
+Error using plot
+Data must be numeric, datetime, duration or an array convertible to double.
+ 
+>> x = -pi:0.1:pi;
+>> y = eval(vectorize(f))
+
+y =
+
+  Columns 1 through 8
+
+    2.0000    1.8003    1.6027    1.4090    1.2212    1.0411    0.8707    0.7116
+
+  Columns 9 through 16
+
+    0.5653    0.4333    0.3171    0.2176    0.1359    0.0729    0.0291    0.0050
+
+  Columns 17 through 24
+
+    0.0009    0.0167    0.0523    0.1074    0.1814    0.2736    0.3830    0.5086
+
+  Columns 25 through 32
+
+    0.6491    0.8031    0.9690    1.1452    1.3300    1.5215    1.7178    1.9168
+
+  Columns 33 through 40
+
+    2.1167    2.3155    2.5111    2.7016    2.8850    3.0597    3.2237    3.3755
+
+  Columns 41 through 48
+
+    3.5136    3.6366    3.7432    3.8323    3.9032    3.9551    3.9874    3.9998
+
+  Columns 49 through 56
+
+    3.9923    3.9649    3.9178    3.8516    3.7669    3.6645    3.5455    3.4111
+
+  Columns 57 through 63
+
+    3.2625    3.1014    2.9292    2.7478    2.5588    2.3643    2.1662
+
+>> plot(x, y)
